@@ -15,5 +15,9 @@ def reduce(source_array, starting_point=0)
     new = yield( new, n)
     i += 1
   end
-  return new
+  if new == 0
+    return true
+  else
+    return new
+  end 
 end
